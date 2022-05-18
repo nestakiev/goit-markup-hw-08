@@ -1,0 +1,51 @@
+.social-join {
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    } 
+    
+    @media screen and (max-width: 1199px) {
+        text-align: center;        
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $whiteText;
+        margin: 0 0 20px;
+    }
+    
+    &__list {
+        @extend %list;
+        padding: 0;
+        margin: -5px;
+        display: flex;
+        justify-content: center;        
+    }
+    
+    &__item {
+        padding: 0;
+        margin: 5px;
+    }
+    
+    &__link {
+        @extend %flex-center;       
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 50%;
+
+        background-color: $greyIconFooter;
+    
+        transition: background-color 250ms $cubic;
+    
+        &:hover, &:focus {
+            background-color: $blue;
+        }
+    }
+    
+    &__icon {
+        fill: $whiteText;
+    }
+}
+

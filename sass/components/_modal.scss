@@ -1,0 +1,185 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    @media screen and (max-width: 479px) {
+        min-width: 320px;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;        
+    }
+    
+    padding: 40px;
+    
+    background-color: $whiteText;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $cubic;   
+    z-index: 10;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    &__exit-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border-radius: 50%;
+        @extend %flex-center;
+    
+        font-size: 13px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: $whiteText;
+    
+        cursor: pointer;
+    }
+    
+    &__exit-icon {
+        transition: fill 250ms $cubic;
+    
+        .modal__exit-btn:hover &,
+        .modal__exit-btn:focus & {
+            fill: $blue;
+        }
+    }
+    
+    
+    &__message {
+        margin: 0 0 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: $blackText;
+        
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;            
+        }
+    }
+    
+    &__form-field {
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    &__field-name {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
+    
+    &__input {
+        display: block;
+        height: 40px;
+        width: 100%;
+        padding: 0 0 0 42px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color 250ms $cubic;
+    
+        &:focus-within {
+            outline: none;
+            border-color: $blue;
+        }
+    }
+    
+    &__icon-input {
+        position: absolute;
+        bottom: 11px;
+        left: 12px;
+        transition: fill 250ms $cubic;
+    
+        .modal__input:focus-within ~ & {
+            fill: $blue;
+        }
+    }
+    
+    &__label-textarea {
+        margin-bottom: 4px;
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
+    
+    &__textarea {
+        padding: 16px 12px;
+        height: 120px;
+        resize: none;
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color 250ms $cubic;
+        margin-bottom: 20px;
+    
+        &:focus-within {
+            outline: none;
+            border-color: $blue;
+        }
+    }
+    
+    &__label-checkbox {
+        @extend %flex-center;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+        }
+    }
+    
+    &__policy-checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    
+    &__icon-policy {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 8px;
+        border: 2px solid $blackText;
+        transition: background-color 250ms $cubic,
+        background-image 250ms $cubic,
+        border-color 250ms $cubic;
+    
+        .modal__policy-checkbox:checked + & {
+            background-color: $blue;
+            background-image: url(../images/check.svg);
+            background-size: contain;
+            border-color: transparent;
+            background-origin: border-box;    
+        }
+    }
+    
+    &__policy-link {
+        color: $blue;
+    }
+}
+
+
+
+
+

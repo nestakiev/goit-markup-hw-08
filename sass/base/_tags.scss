@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $greyText;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    min-width: 320px;
+    overflow-x: scroll;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

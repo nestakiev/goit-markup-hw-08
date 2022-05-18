@@ -1,0 +1,31 @@
+.footer {
+    background-color: $darkGrey;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        @extend %container;
+        max-width: 480px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;            
+        }       
+    }
+
+    &__box {
+            
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+        }        
+    }
+}
+

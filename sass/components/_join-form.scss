@@ -1,0 +1,61 @@
+.join-form {
+    
+    @media screen and (max-width: 1199px) {
+        text-align: center;        
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $whiteText;
+        margin: 0 0 20px;
+    }
+    
+    
+    &__label {
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+        }        
+    }
+    
+    &__input {
+        display: block;
+        padding-left: 12px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+        height: 50px;
+        background-color: $darkGrey;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;    
+        font-size: 16px;
+        line-height: 1.25;
+        color: $greyTextFooter;
+        
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;            
+        }
+    
+            &::placeholder {
+                font-size: 16px;
+                line-height: 1.25;
+                color: $greyTextFooter;
+            }
+    
+            &:focus-within {
+                outline: none;
+            }
+    }
+    
+    &__icon-btn {
+        margin-left: 10px;          
+    }
+}
+

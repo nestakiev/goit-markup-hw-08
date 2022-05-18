@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__container">
+            <nav class="site-nav">
+            <a lang="en" class="logo" href="">Web<span class="logo--black">Studio</span></a>
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="./index.html">Студия</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--current-page" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <ul class="contacts-head">
+            <li class="contacts-head__item"><a class="contacts-head__link" href="mailto:info@devstudio.com">
+                <svg class="contacts-head__icon" width="16" height="12"><use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contacts-head__item"><a class="contacts-head__link" href="tel:+380961111111">
+                <svg class="contacts-head__icon" width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+        </ul>
+    </div>
+
+    <div class="page-header__mobile-container">
+        <nav class="page-header__nav-mobile">
+        <a lang="en" class="logo" href="">Web<span class="logo--black">Studio</span></a>
+
+        <button type="button" class="nav-mobile__menu-btn" data-menu-open>
+            <svg width="40" height="40" class="nav-mobile__icon" 
+            aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-menu"></use>
+             
+        </svg>
+        </button>
+        </nav>
+
+        <nav class="page-header__mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg width="40" height="40" class="mobile-menu__close-icon" 
+            aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-close"></use> 
+        </svg>
+        </button>
+
+        <ul class="site-nav__list">
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current-page" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu__contacts-head">
+            <li class="mobile-menu__item"><a class="mobile-menu__tel" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__email" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Instargam</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a>
+            </li>
+        </ul>
+
+
+        </div>
+        </nav>
+
+    </div>
+    </header>    
+
+    <main>
+        <section class="portfolio-box">
+            <div class="portfolio-box__container">
+                <ul class="filter">
+            <li class="filter__item"> <button type="button" class="filter__button">Все</button></li>
+            <li class="filter__item"> <button type="button" class="filter__button">Веб-сайты</button></li>
+            <li class="filter__item"> <button type="button" class="filter__button">Приложения</button></li>
+            <li class="filter__item"> <button type="button" class="filter__button">Дизайн</button></li>
+            <li class="filter__item"> <button type="button" class="filter__button">Маркетинг</button></li>
+                </ul>
+
+                <ul class="workset">
+            <li class="workset__item"> 
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work1/work1-354.jpg 354w,
+                        ./images/portfolio/work1/work1-370.jpg 370w,
+                        ./images/portfolio/work1/work1-450.jpg 450w,
+                        ./images/portfolio/work1/work1-708.jpg 708w,
+                        ./images/portfolio/work1/work1-740.jpg 740w,
+                        ./images/portfolio/work1/work1-900.jpg 900w"
+                        src="./images/portfolio/work1/work1-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                        alt="ноутбук с открытым веб-сайтом">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>  
+
+                    <div class="workset__content">
+                        <h3 class="workset__title">Технокряк</h3>
+                        <p class="workset__text">Веб-сайт</p>
+                    </div>
+                </a>                       
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work2/work2-354.jpg 354w,
+                        ./images/portfolio/work2/work2-370.jpg 370w,
+                        ./images/portfolio/work2/work2-450.jpg 450w,
+                        ./images/portfolio/work2/work2-708.jpg 708w,
+                        ./images/portfolio/work2/work2-740.jpg 740w,
+                        ./images/portfolio/work2/work2-900.jpg 900w"
+                        src="./images/portfolio/work2/work2-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="2 игрока клубов Нью-Орлеанс и Голден Стар играют в баскетбол">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Постер New Orlean vs Golden Star</h3>
+                <p class="workset__text">Дизайн</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work3/work3-354.jpg 354w,
+                        ./images/portfolio/work3/work3-370.jpg 370w,
+                        ./images/portfolio/work3/work3-450.jpg 450w,
+                        ./images/portfolio/work3/work3-708.jpg 708w,
+                        ./images/portfolio/work3/work3-740.jpg 740w,
+                        ./images/portfolio/work3/work3-900.jpg 900w"
+                        src="./images/portfolio/work3/work3-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                        
+                        alt="логотип ресторана Сиафуд">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Ресторан Seafood</h3>
+                <p class="workset__text">Приложение</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work4/work4-354.jpg 354w,
+                        ./images/portfolio/work4/work4-370.jpg 370w,
+                        ./images/portfolio/work4/work4-450.jpg 450w,
+                        ./images/portfolio/work4/work4-708.jpg 708w,
+                        ./images/portfolio/work4/work4-740.jpg 740w,
+                        ./images/portfolio/work4/work4-900.jpg 900w"
+                        src="./images/portfolio/work4/work4-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="наушники">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Проект Prime</h3>
+                <p class="workset__text">Маркетинг</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work5/work5-354.jpg 354w,
+                        ./images/portfolio/work5/work5-370.jpg 370w,
+                        ./images/portfolio/work5/work5-450.jpg 450w,
+                        ./images/portfolio/work5/work5-708.jpg 708w,
+                        ./images/portfolio/work5/work5-740.jpg 740w,
+                        ./images/portfolio/work5/work5-900.jpg 900w"
+                        src="./images/portfolio/work5/work5-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="две коробочки">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Проект Boxes</h3>
+                <p class="workset__text">Приложение</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work6/work6-354.jpg 354w,
+                        ./images/portfolio/work6/work6-370.jpg 370w,
+                        ./images/portfolio/work6/work6-450.jpg 450w,
+                        ./images/portfolio/work6/work6-708.jpg 708w,
+                        ./images/portfolio/work6/work6-740.jpg 740w,
+                        ./images/portfolio/work6/work6-900.jpg 900w"
+                        src="./images/portfolio/work6/work6-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="монитор с открытым веб-сайтом">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                     
+                <div class="workset__content">
+                <h3 lang="en" class="workset__title">Inspiration has no Borders</h3>
+                <p class="workset__text">Веб-сайт</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work7/work7-354.jpg 354w,
+                        ./images/portfolio/work7/work7-370.jpg 370w,
+                        ./images/portfolio/work7/work7-450.jpg 450w,
+                        ./images/portfolio/work7/work7-708.jpg 708w,
+                        ./images/portfolio/work7/work7-740.jpg 740w,
+                        ./images/portfolio/work7/work7-900.jpg 900w"
+                        src="./images/portfolio/work7/work7-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="развернутый гланцевый журнал">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Издание Limited Edition</h3>
+                <p class="workset__text">Дизайн</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work8/work8-354.jpg 354w,
+                        ./images/portfolio/work8/work8-370.jpg 370w,
+                        ./images/portfolio/work8/work8-450.jpg 450w,
+                        ./images/portfolio/work8/work8-708.jpg 708w,
+                        ./images/portfolio/work8/work8-740.jpg 740w,
+                        ./images/portfolio/work8/work8-900.jpg 900w"
+                        src="./images/portfolio/work8/work8-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="этикетка Лаб">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 class="workset__title">Проект LAB</h3>
+                <p class="workset__text">Маркетинг</p>
+                </div></a>
+            </li>
+            <li class="workset__item">
+                <a class="workset__link" href="">
+                    <div class="workset__box">  
+                        <img class="workset__img" 
+                        srcset="
+                        ./images/portfolio/work9/work9-354.jpg 354w,
+                        ./images/portfolio/work9/work9-370.jpg 370w,
+                        ./images/portfolio/work9/work9-450.jpg 450w,
+                        ./images/portfolio/work9/work9-708.jpg 708w,
+                        ./images/portfolio/work9/work9-740.jpg 740w,
+                        ./images/portfolio/work9/work9-900.jpg 900w"
+                        src="./images/portfolio/work9/work9-354.jpg" 
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        alt="ноутбук с открытым веб-сайтом грувин бизнеса">
+                        <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>                    
+                <div class="workset__content">
+                <h3 lang="en" class="workset__title">Growing Business</h3>
+                <p class="workset__text">Приложение</p>
+                </div></a>
+            </li>       
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__box">
+            <div class="address"><a lang="en" class="logo logo--footer-margin" href="">Web<span class="logo--white">Studio</span></a>
+        <address class="address__box">            
+            <p class="address__physical">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address__list">
+                <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </address>
+            </div>
+
+            <div class="social-join">
+                <h3 class="social-join__title">Присоединяйтесь</h3>
+                <ul class="social-join__list">
+                    <li class="social-join__item"><a class="social-join__link" href="">
+                        <svg class="social-join__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg></a>
+                    </li>
+                    <li class="social-join__item"><a class="social-join__link" href="">
+                        <svg class="social-join__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg></a>
+                    </li>
+                    <li class="social-join__item"><a class="social-join__link" href="">
+                        <svg class="social-join__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg></a>
+                    </li>
+                    <li class="social-join__item"><a class="social-join__link" href="">
+                        <svg class="social-join__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="join-form">
+                <h3 class="join-form__title">Подпишитесь на рассылку</h3>
+                <form name="join-email" class="join-form__form">
+                    <label class="join-form__label">
+                    <input type="email" class="join-form__input" name="input-join-email" placeholder="E-mail"/>
+                    </label>
+                    <button type="submit" class="button button--text-center">Подписаться 
+                        <svg width="24" height="24" class="join-form__icon-btn"><use href="./images/icons.svg#send"></use></svg>
+                    </button> 
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.page-header {
+    border-bottom: 1px solid $borderHeader;
+
+    &__container {
+        
+        display: none;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            max-width: 768px;
+            align-items: center;                       
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;            
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+.address {
+    
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 80px;
+    }
+
+    &__box {
+        font-style: normal;    
+    }
+    
+    &__physical {
+        display: inline-block;
+        color: $whiteText;
+        margin: 0 0 9px;
+    }
+    
+    &__list {
+        @extend %list;
+    }
+    
+    &__item:first-child {
+            margin-bottom: 9px;
+    }    
+    
+    
+    &__link {
+        color: $greyTextFooter;    
+        text-decoration: none;
+        
+        transition: color 250ms $cubic;
+    
+        &:hover, &:focus {
+            color: $blue;
+        }
+    }
+    
+}
