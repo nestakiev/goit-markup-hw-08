@@ -368,7 +368,7 @@ img {
     margin-bottom: 32px;
   }
   .site-nav__item:last-child {
-    margin-bottom: 302px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1680,8 +1680,19 @@ img {
 .mobile-menu__container {
   position: relative;
   max-width: 480px;
+  height: 100%;
   margin: 0 auto;
   padding: 48px 0 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile-menu__close-btn {

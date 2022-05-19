@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="./css/main.min.css" rel="stylesheet">
-    <!-- гугл фикс -->
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
 </head>
 
 <body>
@@ -79,7 +77,8 @@
                 <a class="site-nav__link" href="">Контакты</a>
             </li>
         </ul>
-
+        
+        <div>
         <ul class="mobile-menu__contacts-head">
             <li class="mobile-menu__item"><a class="mobile-menu__tel" href="tel:+380961111111">
                 +38 096 111 11 11</a>
@@ -103,8 +102,7 @@
                 <a class="mobile-menu__social-link" href="">LinkedIn</a>
             </li>
         </ul>
-
-
+        </div>
         </div>
         </nav>
 
@@ -126,17 +124,12 @@
             <li class="workset__item"> 
                 <a class="workset__link" href="">
                     <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work1/work1-354.jpg 354w,
-                        ./images/portfolio/work1/work1-370.jpg 370w,
-                        ./images/portfolio/work1/work1-450.jpg 450w,
-                        ./images/portfolio/work1/work1-708.jpg 708w,
-                        ./images/portfolio/work1/work1-740.jpg 740w,
-                        ./images/portfolio/work1/work1-900.jpg 900w"
-                        src="./images/portfolio/work1/work1-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
-                        alt="ноутбук с открытым веб-сайтом">
+                        <picture>
+                            <source srcset="./images/portfolio/work1/work1-370.jpg 1x, ./images/portfolio/work1/work1-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work1/work1-354.jpg 1x, ./images/portfolio/work1/work1-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work1/work1-450.jpg 1x, ./images/portfolio/work1/work1-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work1/work1-354.jpg" alt="ноутбук с открытым веб-сайтом">
+                    </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>  
@@ -150,17 +143,12 @@
             <li class="workset__item">
                 <a class="workset__link" href="">
                     <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work2/work2-354.jpg 354w,
-                        ./images/portfolio/work2/work2-370.jpg 370w,
-                        ./images/portfolio/work2/work2-450.jpg 450w,
-                        ./images/portfolio/work2/work2-708.jpg 708w,
-                        ./images/portfolio/work2/work2-740.jpg 740w,
-                        ./images/portfolio/work2/work2-900.jpg 900w"
-                        src="./images/portfolio/work2/work2-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="2 игрока клубов Нью-Орлеанс и Голден Стар играют в баскетбол">
+                        <picture>
+                            <source srcset="./images/portfolio/work2/work2-370.jpg 1x, ./images/portfolio/work2/work2-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work2/work2-354.jpg 1x, ./images/portfolio/work2/work2-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work2/work2-450.jpg 1x, ./images/portfolio/work2/work2-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work2/work2-354.jpg" alt="2 игрока клубов Нью-Орлеанс и Голден Стар играют в баскетбол">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -172,18 +160,12 @@
             <li class="workset__item">
                 <a class="workset__link" href="">
                     <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work3/work3-354.jpg 354w,
-                        ./images/portfolio/work3/work3-370.jpg 370w,
-                        ./images/portfolio/work3/work3-450.jpg 450w,
-                        ./images/portfolio/work3/work3-708.jpg 708w,
-                        ./images/portfolio/work3/work3-740.jpg 740w,
-                        ./images/portfolio/work3/work3-900.jpg 900w"
-                        src="./images/portfolio/work3/work3-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
-                        
-                        alt="логотип ресторана Сиафуд">
+                        <picture>
+                            <source srcset="./images/portfolio/work3/work3-370.jpg 1x, ./images/portfolio/work3/work3-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work3/work3-354.jpg 1x, ./images/portfolio/work3/work3-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work3/work3-450.jpg 1x, ./images/portfolio/work3/work3-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work3/work3-354.jpg" alt="логотип ресторана Сиафуд">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -195,17 +177,12 @@
             <li class="workset__item">
                 <a class="workset__link" href="">
                     <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work4/work4-354.jpg 354w,
-                        ./images/portfolio/work4/work4-370.jpg 370w,
-                        ./images/portfolio/work4/work4-450.jpg 450w,
-                        ./images/portfolio/work4/work4-708.jpg 708w,
-                        ./images/portfolio/work4/work4-740.jpg 740w,
-                        ./images/portfolio/work4/work4-900.jpg 900w"
-                        src="./images/portfolio/work4/work4-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="наушники">
+                        <picture>
+                            <source srcset="./images/portfolio/work4/work4-370.jpg 1x, ./images/portfolio/work4/work4-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work4/work4-354.jpg 1x, ./images/portfolio/work4/work4-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work4/work4-450.jpg 1x, ./images/portfolio/work4/work4-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work4/work4-354.jpg" alt="наушники">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -217,17 +194,12 @@
             <li class="workset__item">
                 <a class="workset__link" href="">
                     <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work5/work5-354.jpg 354w,
-                        ./images/portfolio/work5/work5-370.jpg 370w,
-                        ./images/portfolio/work5/work5-450.jpg 450w,
-                        ./images/portfolio/work5/work5-708.jpg 708w,
-                        ./images/portfolio/work5/work5-740.jpg 740w,
-                        ./images/portfolio/work5/work5-900.jpg 900w"
-                        src="./images/portfolio/work5/work5-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="две коробочки">
+                        <picture>
+                            <source srcset="./images/portfolio/work5/work5-370.jpg 1x, ./images/portfolio/work5/work5-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work5/work5-354.jpg 1x, ./images/portfolio/work5/work5-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work5/work5-450.jpg 1x, ./images/portfolio/work5/work5-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work5/work5-354.jpg" alt="две коробочки">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -238,18 +210,13 @@
             </li>
             <li class="workset__item">
                 <a class="workset__link" href="">
-                    <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work6/work6-354.jpg 354w,
-                        ./images/portfolio/work6/work6-370.jpg 370w,
-                        ./images/portfolio/work6/work6-450.jpg 450w,
-                        ./images/portfolio/work6/work6-708.jpg 708w,
-                        ./images/portfolio/work6/work6-740.jpg 740w,
-                        ./images/portfolio/work6/work6-900.jpg 900w"
-                        src="./images/portfolio/work6/work6-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="монитор с открытым веб-сайтом">
+                    <div class="workset__box">
+                        <picture>
+                            <source srcset="./images/portfolio/work6/work6-370.jpg 1x, ./images/portfolio/work6/work6-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work6/work6-354.jpg 1x, ./images/portfolio/work6/work6-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work6/work6-450.jpg 1x, ./images/portfolio/work6/work6-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work6/work6-354.jpg" alt="монитор с открытым веб-сайтом">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                     
@@ -260,18 +227,13 @@
             </li>
             <li class="workset__item">
                 <a class="workset__link" href="">
-                    <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work7/work7-354.jpg 354w,
-                        ./images/portfolio/work7/work7-370.jpg 370w,
-                        ./images/portfolio/work7/work7-450.jpg 450w,
-                        ./images/portfolio/work7/work7-708.jpg 708w,
-                        ./images/portfolio/work7/work7-740.jpg 740w,
-                        ./images/portfolio/work7/work7-900.jpg 900w"
-                        src="./images/portfolio/work7/work7-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="развернутый гланцевый журнал">
+                    <div class="workset__box">
+                        <picture>
+                            <source srcset="./images/portfolio/work7/work7-370.jpg 1x, ./images/portfolio/work7/work7-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work7/work7-354.jpg 1x, ./images/portfolio/work7/work7-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work7/work7-450.jpg 1x, ./images/portfolio/work7/work7-900.jpg 2x" media="(max-width: 767px)">  
+                        <img class="workset__img" src="./images/portfolio/work7/work7-354.jpg" alt="развернутый гланцевый журнал">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -282,18 +244,13 @@
             </li>
             <li class="workset__item">
                 <a class="workset__link" href="">
-                    <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work8/work8-354.jpg 354w,
-                        ./images/portfolio/work8/work8-370.jpg 370w,
-                        ./images/portfolio/work8/work8-450.jpg 450w,
-                        ./images/portfolio/work8/work8-708.jpg 708w,
-                        ./images/portfolio/work8/work8-740.jpg 740w,
-                        ./images/portfolio/work8/work8-900.jpg 900w"
-                        src="./images/portfolio/work8/work8-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="этикетка Лаб">
+                    <div class="workset__box">
+                        <picture>
+                            <source srcset="./images/portfolio/work8/work8-370.jpg 1x, ./images/portfolio/work8/work8-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work8/work8-354.jpg 1x, ./images/portfolio/work8/work8-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work8/work8-450.jpg 1x, ./images/portfolio/work8/work8-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work8/work8-354.jpg" alt="этикетка Лаб">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    
@@ -304,18 +261,13 @@
             </li>
             <li class="workset__item">
                 <a class="workset__link" href="">
-                    <div class="workset__box">  
-                        <img class="workset__img" 
-                        srcset="
-                        ./images/portfolio/work9/work9-354.jpg 354w,
-                        ./images/portfolio/work9/work9-370.jpg 370w,
-                        ./images/portfolio/work9/work9-450.jpg 450w,
-                        ./images/portfolio/work9/work9-708.jpg 708w,
-                        ./images/portfolio/work9/work9-740.jpg 740w,
-                        ./images/portfolio/work9/work9-900.jpg 900w"
-                        src="./images/portfolio/work9/work9-354.jpg" 
-                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        alt="ноутбук с открытым веб-сайтом грувин бизнеса">
+                    <div class="workset__box">
+                        <picture>
+                            <source srcset="./images/portfolio/work9/work9-370.jpg 1x, ./images/portfolio/work9/work9-740.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/portfolio/work9/work9-354.jpg 1x, ./images/portfolio/work9/work9-708.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/portfolio/work9/work9-450.jpg 1x, ./images/portfolio/work9/work9-900.jpg 2x" media="(max-width: 767px)">
+                        <img class="workset__img" src="./images/portfolio/work9/work9-354.jpg" alt="ноутбук с открытым веб-сайтом грувин бизнеса">
+                        </picture>
                         <p class="workset__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>                    

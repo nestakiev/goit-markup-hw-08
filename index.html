@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="./css/main.min.css" rel="stylesheet">
-    <!-- гугл фикс -->
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/> 
-    
+
 </head>
 
 <body>
@@ -81,6 +79,7 @@
             </li>
         </ul>
 
+        <div>
         <ul class="mobile-menu__contacts-head">
             <li class="mobile-menu__item"><a class="mobile-menu__tel" href="tel:+380961111111">
                 +38 096 111 11 11</a>
@@ -104,6 +103,7 @@
                 <a class="mobile-menu__social-link" href="">LinkedIn</a>
             </li>
         </ul>
+        </div>
 
 
         </div>
@@ -153,33 +153,24 @@
             <h2 class="works__title">Чем мы занимаемся</h2>
             <ul class="works__list">
                 <li class="works__item"> 
-                    <img class="works__img" 
-                    srcset="
-                    ./images/work/work1-370.jpg 370w,
-                    ./images/work/work1-740.jpg 740w,"
-                    src="./images/work/work1-370.jpg" 
-                    sizes="370px" 
-                    alt="Человек работает за клавиутурой перед экраном планшета" /> 
+                    <picture>
+                        <source srcset="./images/work/work1-370.jpg.jpg 1x, ./images/work/work1-740.jpg 2x" media="(min-width: 1200px)">
+                    <img class="works__img" src="./images/work/work1-370.jpg" alt="Человек работает за клавиутурой перед экраном планшета"/>
+                    </picture>
                 <h3 class="works__description">Десктопные приложения</h3>
                 </li>
                 <li class="works__item">
-                    <img class="works__img" 
-                    srcset="
-                    ./images/work/work2-370.jpg 370w,
-                    ./images/work/work2-740.jpg 740w,"
-                    src="./images/work/work2-370.jpg" 
-                    sizes="370px" 
-                    alt="Человек держит в руке телефон перед рабочим местом с планшетом и комп'ютером"/> 
+                    <picture>
+                        <source srcset="./images/work/work2-370.jpg.jpg 1x, ./images/work/work2-740.jpg 2x" media="(min-width: 1200px)">
+                    <img class="works__img" src="./images/work/work2-370.jpg" alt="Человек держит в руке телефон перед рабочим местом с планшетом и комп'ютером"/>
+                    </picture>
                 <h3 class="works__description">Мобильные приложения</h3>
                 </li>
-                <li class="works__item"> 
-                    <img class="works__img" 
-                    srcset="
-                    ./images/work/work3-370.jpg 370w,
-                    ./images/work/work3-740.jpg 740w,"
-                    src="./images/work/work3-370.jpg" 
-                    sizes="370px" 
-                    alt="Человек держит в руках планшет, на экране планшета выведена цветовая палитка"/> 
+                <li class="works__item">
+                    <picture>
+                        <source srcset="./images/work/work3-370.jpg.jpg 1x, ./images/work/work3-740.jpg 2x" media="(min-width: 1200px)">
+                    <img class="works__img" src="./images/work/work3-370.jpg" alt="Человек держит в руках планшет, на экране планшета выведена цветовая палитка"/>
+                    </picture>
                 <h3 class="works__description">Дизайнерские решения</h3>
                 </li>
             </ul>
@@ -190,17 +181,13 @@
             <div class="team__container">
                 <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
-                <li class="team__item"> <img class="team__img" 
-                    srcset="
-                    ./images/team/teammate1/photo1-270.jpg 270w,
-                    ./images/team/teammate1/photo1-354.jpg 354w,
-                    ./images/team/teammate1/photo1-450.jpg 450w,
-                    ./images/team/teammate1/photo1-540.jpg 540w,
-                    ./images/team/teammate1/photo1-708.jpg 708w,
-                    ./images/team/teammate1/photo1-900.jpg 900w"
-                    src="./images/team/teammate1/photo1-270.jpg" 
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"  
-                    alt="фото Игорь Демьяненко" />
+                <li class="team__item"> 
+                    <picture>
+                        <source srcset="./images/team/teammate1/photo1-270.jpg 1x, ./images/team/teammate1/photo1-540.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/teammate1/photo1-354.jpg 1x, ./images/team/teammate1/photo1-708.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/teammate1/photo1-450.jpg 1x, ./images/team/teammate1/photo1-900.jpg 2x" media="(max-width: 767px)">
+                    <img class="team__img" src="./images/team/teammate1/photo1-270.jpg" alt="фото Игорь Демьяненко" />
+                    </picture>
                     <div class="team__box-content"> 
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p lang="en" class="team__position">Product Designer</p>
@@ -229,17 +216,13 @@
                     </div>
                 </li>
 
-                <li class="team__item"> <img class="team__img" 
-                    srcset="
-                    ./images/team/teammate2/photo2-270.jpg 270w,
-                    ./images/team/teammate2/photo2-354.jpg 354w,
-                    ./images/team/teammate2/photo2-450.jpg 450w,
-                    ./images/team/teammate2/photo2-540.jpg 540w,
-                    ./images/team/teammate2/photo2-708.jpg 708w,
-                    ./images/team/teammate2/photo2-900.jpg 900w"
-                    src="./images/team/teammate2/photo2-270.jpg" 
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    alt="фото Ольга Репина" />
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/team/teammate2/photo2-270.jpg 1x, ./images/team/teammate2/photo2-540.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/teammate2/photo2-354.jpg 1x, ./images/team/teammate2/photo2-708.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/teammate2/photo2-450.jpg 1x, ./images/team/teammate2/photo2-900.jpg 2x" media="(max-width: 767px)">
+                    <img class="team__img" src="./images/team/teammate2/photo2-270.jpg" alt="фото Ольга Репина" />
+                    </picture>
                     <div class="team__box-content">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p lang="en" class="team__position">Frontend Developer</p>
@@ -268,17 +251,13 @@
                     </div>
                 </li>
 
-                <li class="team__item"> <img class="team__img" 
-                    srcset="
-                    ./images/team/teammate3/photo3-270.jpg 270w,
-                    ./images/team/teammate3/photo3-354.jpg 354w,
-                    ./images/team/teammate3/photo3-450.jpg 450w,
-                    ./images/team/teammate3/photo3-540.jpg 540w,
-                    ./images/team/teammate3/photo3-708.jpg 708w,
-                    ./images/team/teammate3/photo3-900.jpg 900w"
-                    src="./images/team/teammate3/photo3-270.jpg" 
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    alt="фото Николай Тарасов" />
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/team/teammate3/photo3-270.jpg 1x, ./images/team/teammate3/photo3-540.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/teammate3/photo3-354.jpg 1x, ./images/team/teammate3/photo3-708.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/teammate3/photo3-450.jpg 1x, ./images/team/teammate3/photo3-900.jpg 2x" media="(max-width: 767px)">
+                    <img class="team__img" src="./images/team/teammate3/photo3-270.jpg" alt="фото Николай Тарасов" />
+                </picture>
                     <div class="team__box-content">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p lang="en" class="team__position">Marketing</p>
@@ -307,17 +286,13 @@
                     </div>
                 </li>
 
-                <li class="team__item"> <img class="team__img" 
-                    srcset="
-                    ./images/team/teammate4/photo4-270.jpg 270w,
-                    ./images/team/teammate4/photo4-354.jpg 354w,
-                    ./images/team/teammate4/photo4-450.jpg 450w,
-                    ./images/team/teammate4/photo4-540.jpg 540w,
-                    ./images/team/teammate4/photo4-708.jpg 708w,
-                    ./images/team/teammate4/photo4-900.jpg 900w"
-                    src="./images/team/teammate4/photo4-270.jpg" 
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-3                    alt="фото Михаил Ермаков" />
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/team/teammate4/photo4-270.jpg 1x, ./images/team/teammate4/photo4-540.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/teammate4/photo4-354.jpg 1x, ./images/team/teammate4/photo4-708.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/teammate4/photo4-450.jpg 1x, ./images/team/teammate4/photo4-900.jpg 2x" media="(max-width: 767px)">
+                    <img class="team__img" src="./images/team/teammate4/photo4-270.jpg" alt="фото Михаил Ермаков" />
+                </picture>
                     <div class="team__box-content">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p lang="en" class="team__position">UI Designer</p>
